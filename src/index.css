@@ -1,0 +1,352 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #121212;
+  color: white;
+}
+
+::selection {
+  background-color: rgba(168, 85, 247, 0.4);
+}
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  animation: slideFromLeft 0.8s ease-out forwards;
+}
+
+.slide-in-delay-1 {
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.slide-in-delay-2 {
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.slide-in-delay-3 {
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+.button {
+  --😀: #644dff;
+  --😀😀: #4836bb;
+  --😀😀😀: #654dff63;
+  cursor: pointer;
+  width: 184px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.125em;
+  font-weight: 800;
+  letter-spacing: 2px;
+  color: #fff;
+  background: var(--😀);
+  border: 2px solid var(--😀😀);
+  border-radius: .75rem;
+  box-shadow: 0 8px 0 var(--😀😀);
+  transform: skew(-10deg);
+  transition: all .1s ease;
+  filter: drop-shadow(0 15px 20px var(--😀😀😀));
+}
+
+.button:active {
+  letter-spacing: 0px;
+  transform: skew(-10deg) translateY(8px);
+  box-shadow: 0 0 0 var(--😀😀😀);
+}
+
+
+.slide-in {
+  animation: slideFromLeft 0.8s ease-out forwards;
+}
+
+.slide-in-delay-1 {
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.slide-in-delay-2 {
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.slide-in-delay-3 {
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+.slide-in-delay-4 {
+  animation-delay: 0.8s;
+  opacity: 0;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  --color: hsl(0, 0%, 87%);
+  --animation: 2s ease-in-out infinite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #121212;
+  z-index: 1000;
+}
+
+.loader .circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border: solid 2px var(--color);
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: transparent;
+  animation: circle-keys var(--animation);
+}
+
+.loader .circle .dot {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: var(--color);
+  animation: dot-keys var(--animation);
+}
+
+.loader .circle .outline {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  animation: outline-keys var(--animation);
+}
+
+.circle:nth-child(2) {
+  animation-delay: 0.3s;
+}
+
+.circle:nth-child(3) {
+  animation-delay: 0.6s;
+}
+
+.circle:nth-child(4) {
+  animation-delay: 0.9s;
+}
+
+.circle:nth-child(5) {
+  animation-delay: 1.2s;
+}
+
+.circle:nth-child(2) .dot {
+  animation-delay: 0.3s;
+}
+
+.circle:nth-child(3) .dot {
+  animation-delay: 0.6s;
+}
+
+.circle:nth-child(4) .dot {
+  animation-delay: 0.9s;
+}
+
+.circle:nth-child(5) .dot {
+  animation-delay: 1.2s;
+}
+
+.circle:nth-child(1) .outline {
+  animation-delay: 0.9s;
+}
+
+.circle:nth-child(2) .outline {
+  animation-delay: 1.2s;
+}
+
+.circle:nth-child(3) .outline {
+  animation-delay: 1.5s;
+}
+
+.circle:nth-child(4) .outline {
+  animation-delay: 1.8s;
+}
+
+.circle:nth-child(5) .outline {
+  animation-delay: 2.1s;
+}
+
+@keyframes circle-keys {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.5);
+    opacity: 0.5;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes dot-keys {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes outline-keys {
+  0% {
+    transform: scale(0);
+    outline: solid 20px var(--color);
+    outline-offset: 0;
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1);
+    outline: solid 0 transparent;
+    outline-offset: 20px;
+    opacity: 0;
+  }
+}.loaded .slide-in {
+  animation: slideFromLeft 0.8s ease-out forwards;
+}
+
+.loaded .slide-in-delay-1 {
+  animation-delay: 0.2s;
+  opacity: 0;
+}
+
+.loaded .slide-in-delay-2 {
+  animation-delay: 0.4s;
+  opacity: 0;
+}
+
+.loaded .slide-in-delay-3 {
+  animation-delay: 0.6s;
+  opacity: 0;
+}
+
+.loaded .slide-in-delay-4 {
+  animation-delay: 0.8s;
+  opacity: 0;
+}.loaded .slide-in {
+  animation: slideFromLeft 0.8s ease-out forwards;
+}
+
+.loaded .slide-in-delay-1 {
+  animation-delay: 0.2s;
+  opacity: 0;
+  animation: slideFromLeft 0.8s ease-out forwards;
+}
+
+.loaded .slide-in-delay-2 {
+  animation-delay: 0.4s;
+  opacity: 0;
+  animation: slideFromLeft 0.8s ease-out forwards;
+}
+
+.loaded .slide-in-delay-3 {
+  animation-delay: 0.6s;
+  opacity: 0;
+  animation: slideFromLeft 0.8s ease-out forwards;
+}
+
+.loaded .slide-in-delay-4 {
+  animation-delay: 0.8s;
+  opacity: 0;
+  animation: slideFromLeft 0.8s ease-out forwards;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+.test {
+  animation: test 2s infinite;
+}
+
+@keyframes test {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+
+/* Add this to your CSS file */
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 1s, transform 1s;
+}
+
+.animate-on-scroll.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
