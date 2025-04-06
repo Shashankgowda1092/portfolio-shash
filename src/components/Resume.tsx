@@ -1,28 +1,33 @@
-import React from "react";
 import { GraduationCap, Briefcase, Award } from "lucide-react";
 
 const Resume = () => {
   const education = [
     {
-      degree: "B.Tech in Computer Science",
-      institution: "SRM University Vadapalani",
-      year: "2021 - 2025",
+      degree: "B.Tech in Information Science",
+      institution: "Don Bosco Institute of Technology",
+      year: "2019 - 2023",
       description:
-        "Specialization in Artificial Intelligence and Machine Learning",
+        "Specialization in Computer Science and Web devlopment",
     },
+    {
+      degree:"PUC",
+      institution:" MES PU College",
+      year:"2017-2019",
+      description:"Studied Science stream with core subjects in PCM and Electronics."
+    }
   ];
 
   const experience = [
     {
-      role: "AI/ML Devloper Intern",
-      company: "Hexaware Technologies",
-      year: "2023",
+      role: "Associate Software Engineer ",
+      company: "Torry Harris Business Solutions",
+      year: "2023 – Present",
       description:
         "Worked as a Developer (role),Explored Generative AI model, specifically Mistral and build a ChatBot and other different techniques such as RAG during this period.",
     },
     {
-      role: "Student Intern",
-      company: "Openweiver",
+      role: "Intern Bootcamp",
+      company: "Torry Harris Business Solutions",
       year: "2023",
       description:
         "Contributed ideas during brainstorming sessions to generate creative solutions.Worked On Generative AIBuilt full-stack applications using React and Node.js",
@@ -52,13 +57,9 @@ const Resume = () => {
   };
 
   return (
-    <section id="resume" className="py-20 bg-[#1A1A1A]">
+    <section id="resume" className="py-10 bg-[#1A1A1A]">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center slide-in">
-          Resume
-        </h2>
-
-        <div className="grid md:grid-cols-2 gap-12 mb-12 slide-in slide-in-delay-1">
+        <div className="flex flex-col gap-12 mb-12 slide-in slide-in-delay-1">
           {/* Skills Section */}
           <div className="skills slide-in slide-in-delay-4">
             <h3 className="text-2xl font-bold mb-8 text-center">
@@ -110,17 +111,19 @@ const Resume = () => {
               <GraduationCap className="text-purple-500" size={24} />
               <h3 className="text-2xl font-semibold">Education</h3>
             </div>
-            {education.map((edu, index) => (
-              <div
-                key={index}
-                className="mb-6 border-l-2 border-purple-500 pl-4 slide-in slide-in-delay-3"
-              >
-                <h4 className="text-xl font-semibold">{edu.degree}</h4>
-                <p className="text-gray-400">{edu.institution}</p>
-                <p className="text-purple-500">{edu.year}</p>
-                <p className="text-gray-400 mt-2">{edu.description}</p>
-              </div>
-            ))}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 w-full">
+              {education.map((edu, index) => (
+                <div
+                  key={index}
+                  className="border-l-2 border-purple-500 pl-4 slide-in slide-in-delay-3"
+                >
+                  <h4 className="text-xl font-semibold">{edu.degree}</h4>
+                  <p className="text-gray-400">{edu.institution}</p>
+                  <p className="text-purple-500">{edu.year}</p>
+                  <p className="text-gray-400 mt-2">{edu.description}</p>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
