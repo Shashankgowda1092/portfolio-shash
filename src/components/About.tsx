@@ -54,7 +54,7 @@ const About = () => {
           </div>
         </div>
       </div>
-  
+{/*   
       <div className="skills slide-in slide-in-delay-4">
         <h3 className="text-2xl font-bold mb-8 text-center">Skills & Technologies</h3>
         <div className="grid md:grid-cols-3 gap-8">
@@ -69,7 +69,7 @@ const About = () => {
             </div>
           ))}
         </div>
-      </div>
+      </div> */}
     </div>
   </section>
   );
