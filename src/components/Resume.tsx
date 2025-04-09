@@ -6,15 +6,15 @@ const Resume = () => {
       degree: "B.Tech in Information Science",
       institution: "Don Bosco Institute of Technology",
       year: "2019 - 2023",
-      description:
-        "Specialization in Computer Science and Web devlopment",
+      description: "Specialization in Computer Science and Web devlopment",
     },
     {
-      degree:"PUC",
-      institution:" MES PU College",
-      year:"2017-2019",
-      description:"Studied Science stream with core subjects in PCM and Electronics."
-    }
+      degree: "PUC",
+      institution: " MES PU College",
+      year: "2017-2019",
+      description:
+        "Studied Science stream with core subjects in PCM and Electronics.",
+    },
   ];
 
   const experience = [
@@ -33,27 +33,31 @@ const Resume = () => {
         "Contributed ideas during brainstorming sessions to generate creative solutions.Worked On Generative AIBuilt full-stack applications using React and Node.js",
     },
     {
-      role: "Design Head",
-      company: "Design and Innovation Club",
-      year: "2022-2024",
+      role: "Intern",
+      company: "KT technologies",
+      year: "2022",
       description:
-        "Led the design team, overseeing creative direction for various design projects and prototypes. Collaborated closely with the technical head to ensure feasibility and innovation in product designs. Organized design workshops and brainstormed new concepts, resulting in innovative solutions and a cohesive design strategy for the club. Managed and mentored team members to foster creativity and enhance technical skills.",
-    },
-    {
-      role: "Cyber Security Intern",
-      company: "EduStation",
-      year: "2023",
-      description:
-        "Completed an internship focused on Cyber Security, gaining hands-on experience in identifying and mitigating security threats. Demonstrated dedication, professionalism, and valuable technical skills, contributing to projects aimed at enhancing cybersecurity protocols and practices during the period.",
+        "Worked on python and machine Learning models",
     },
   ];
 
   const skills = {
-    "Programming Languages": ["Python", "JavaScript", "TypeScript", "C++", "C"],
-    "AI/ML": ["TensorFlow", "PyTorch", "Scikit-learn", "OpenCV"],
-    "Web Technologies": ["React", "Node.js", "Next.js", "Tailwind CSS"],
-    Databases: ["MongoDB", "PostgreSQL", "Redis"],
-    Tools: ["Git", "Docker", "AWS", "Linux"],
+    "Programming Languages": [
+      "JavaScript",
+      "TypeScript",
+      "Java",
+      "Python",
+      "HTML",
+      "C",
+    ],
+    "Frontend Frameworks": ["ReactJS", "Angular", "Vue", "NextJS"],
+    "Component Libraries": ["ShadCN", "Material UI", "Ant Design"],
+    "CSS Frameworks": ["Tailwind CSS","SCSS" ,"Bootstrap"],
+    "Frontend Concepts": ["Hooks", "ContextAPI", "Redux"],
+    DevOps: ["AWS", "Docker", "Jenkins"],
+    Databases: ["MySQL", "MongoDB"],
+    "Backend Tools": ["Postman", "Swagger", "Spring Boot"],
+    
   };
 
   return (

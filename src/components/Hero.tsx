@@ -3,7 +3,7 @@ import { Github, Linkedin, Mail, Twitter, Instagram } from "lucide-react";
 const Hero = () => {
   return (
     <div className="flex flex-col-reverse md:flex-row">
-      <section id="home" className="pt-24 pb-16 min-h-screen flex items-center">
+      <section id="home" className="pt-4 pb-6 min-h-screen flex items-center">
         <div className="container mx-auto px-10">
           <div className="grid md:grid-cols-2 gap-8 items-center">
             <div>
@@ -15,15 +15,19 @@ const Hero = () => {
                   Shashank
                   <span className="text-purple-500"> H</span>
                 </h1>
-                <div className="slide-in slide-in-delay-2">
-                  <span className="text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 font-semibold">
+                <div
+                  className="slide-in slide-in-delay-2 flex flex-col">
+                  <div className="text-2xl md:text-3xl text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-pink-500 font-semibold">
                     ReactJS Web Developer
-                  </span>
+                  </div>
+                  <div className="text-xl md:text-2xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-400 font-medium">
+                    Torry Harris Integration Solutions
+                  </div>
                 </div>
                 <p className="text-lg text-gray-400 max-w-lg slide-in slide-in-delay-3">
-                  I craft intelligent solutions and beautiful web experiences,
-                  specializing in artificial intelligence and full-stack
-                  development.
+                  Building modern, responsive web apps with ReactJS, Tailwind,
+                  and ShadCN. Passionate about clean UI, smart code, and
+                  product-driven development.
                 </p>
                 <div className="flex space-x-4 pt-4 slide-in slide-in-delay-3">
                   <a
