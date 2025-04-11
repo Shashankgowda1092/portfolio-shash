@@ -23,21 +23,21 @@ const Resume = () => {
       company: "Torry Harris Business Solutions",
       year: "2023 – Present",
       description:
-        "Worked as a Developer (role),Explored Generative AI model, specifically Mistral and build a ChatBot and other different techniques such as RAG during this period.",
+        "Working as a ReactJS developer at Torry Harris Business Solutions, focusing on building responsive UIs, integrating REST APIs, and implementing component-based design using ShadCN, Redux, and TailwindCSS.",
     },
     {
       role: "Intern Bootcamp",
       company: "Torry Harris Business Solutions",
       year: "2023",
       description:
-        "Contributed ideas during brainstorming sessions to generate creative solutions.Worked On Generative AIBuilt full-stack applications using React and Node.js",
+        "Underwent intensive DevOps training, gaining hands-on experience with tools such as Docker, Kubernetes, and Terraform, while contributing to internal projects and collaborative learning.",
     },
     {
       role: "Intern",
       company: "KT technologies",
       year: "2022",
       description:
-        "Worked on python and machine Learning models",
+        "Gained practical experience in Python programming and machine learning by working on data-driven models and automation tasks during the internship period.",
     },
   ];
 
@@ -61,7 +61,7 @@ const Resume = () => {
   };
 
   return (
-    <section id="resume" className="py-10 bg-[#1A1A1A]">
+    <section id="resume" className="py-10 ">
       <div className="container mx-auto px-4">
         <div className="flex flex-col gap-12 mb-12 slide-in slide-in-delay-1">
           {/* Skills Section */}

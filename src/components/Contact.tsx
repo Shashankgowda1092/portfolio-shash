@@ -1,10 +1,9 @@
-import React from 'react';
-import { Mail, Linkedin, Github, Twitter, Instagram } from 'lucide-react';
+import { Mail, Linkedin, Github,   } from 'lucide-react';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-32 bg-[#1A1A1A]">
-    <div className="container mx-auto px-4 max-w-3xl">
+    <section id="contact" className="pb-10 bg-[#1A1A1A]">
+    <div className="container mx-auto px-4 max-w-3xl pt-5">
       <div className="text-center mb-16 slide-in">
         <h2 className="text-4xl font-bold mb-6">Let's Connect</h2>
         <p className="text-gray-400 text-lg max-w-2xl mx-auto slide-in slide-in-delay-1">
@@ -15,12 +14,12 @@ const Contact = () => {
   
       <div className="grid gap-8 slide-in slide-in-delay-2">
         <a 
-          href="mailto:your.email@example.com"
+          href="mailto:shashankh1092@gmail.com"
           className="group flex items-center justify-between p-6 bg-[#222222] rounded-lg hover:bg-[#2a2a2a] transition-all duration-300"
         >
           <div className="flex items-center gap-4">
             <Mail className="text-purple-500" size={24} />
-            <span className="text-xl">your.email@example.com</span>
+            <span className="text-xl">shashankh1092@gmail.com</span>
           </div>
           <span className="text-gray-400 group-hover:translate-x-2 transition-transform duration-300">
             Send an email →
@@ -28,7 +27,7 @@ const Contact = () => {
         </a>
   
         <a 
-          href="https://linkedin.com"
+          href="https://www.linkedin.com/in/shash-/"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex items-center justify-between p-6 bg-[#222222] rounded-lg hover:bg-[#2a2a2a] transition-all duration-300"
@@ -43,7 +42,7 @@ const Contact = () => {
         </a>
   
         <a 
-          href="https://github.com"
+          href="https://github.com/Shashankgowda1092"
           target="_blank"
           rel="noopener noreferrer"
           className="group flex items-center justify-between p-6 bg-[#222222] rounded-lg hover:bg-[#2a2a2a] transition-all duration-300"
@@ -56,34 +55,8 @@ const Contact = () => {
             See my work →
           </span>
         </a>
-        <a 
-          href="https://www.instagram.com/arno_dorian_123?igsh=MXQyZWY5c2x2MGR3dg==" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="group flex items-center justify-between p-6 bg-[#222222] rounded-lg hover:bg-[#2a2a2a] transition-all duration-300"
-        >
-          <div className="flex items-center gap-4">
-            <Instagram className="text-purple-500" size={24} /> {/* Instagram icon */}
-            <span className="text-xl">Instagram</span>
-          </div>
-          <span className="text-gray-400 group-hover:translate-x-2 transition-transform duration-300">
-            Follow me →
-          </span>
-        </a>
-        <a 
-          href="https://twitter.com/your_twitter_handle" 
-          target="_blank" 
-          rel="noopener noreferrer"
-          className="group flex items-center justify-between p-6 bg-[#222222] rounded-lg hover:bg-[#2a2a2a] transition-all duration-300"
-        >
-          <div className="flex items-center gap-4">
-            <Twitter className="text-purple-500" size={24} /> {/* Twitter icon */}
-            <span className="text-xl">Twitter</span>
-          </div>
-          <span className="text-gray-400 group-hover:translate-x-2 transition-transform duration-300">
-            Follow me →
-          </span>
-        </a>
+    
+
       </div>
     </div>
   </section>

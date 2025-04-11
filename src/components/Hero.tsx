@@ -31,7 +31,7 @@ const Hero = () => {
                 </p>
                 <div className="flex space-x-4 pt-4 slide-in slide-in-delay-3">
                   <a
-                    href="https://github.com/Karthik-coder-003"
+                    href="https://github.com/Shashankgowda1092"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full border border-white/20 hover:border-purple-500 transition-colors"
@@ -39,31 +39,17 @@ const Hero = () => {
                     <Github size={24} />
                   </a>
                   <a
-                    href="https://www.linkedin.com/in/karthikeyan-g-1389b2281"
+                    href="https://www.linkedin.com/in/shash-/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="p-2 rounded-full border border-white/20 hover:border-purple-500 transition-colors"
                   >
                     <Linkedin size={24} />
                   </a>
+               
+                
                   <a
-                    href="https://twitter.com/your_twitter_handle"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-full border border-white/20 hover:border-purple-500 transition-colors"
-                  >
-                    <Twitter size={24} />
-                  </a>
-                  <a
-                    href="https://instagram.com/your_instagram_handle"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-2 rounded-full border border-white/20 hover:border-purple-500 transition-colors"
-                  >
-                    <Instagram size={24} />
-                  </a>
-                  <a
-                    href="mailto:kark60200710@gmail.com"
+                    href="mailto:shashankh1092@gmail.com"
                     className="p-2 rounded-full border border-white/20 hover:border-purple-500 transition-colors"
                   >
                     <Mail size={24} />

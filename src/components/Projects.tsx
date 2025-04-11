@@ -7,7 +7,7 @@ const Projects = () => {
       title: "Torry Harris Marketplace (Digital Product)",
       description:
         "Part of the product engineering team building a marketplace platform similar to Amazon. Developed components and pages for portals like admin, vendor, and storefront using ShadCN, Redux, and React Query. Responsible for feature implementation and migration tasks for a platform supporting multiple user types and seamless transactions.",
-      image: "",
+      image: "/market.png",
       tags: [
         "React",
         "ShadCN",
@@ -25,7 +25,7 @@ const Projects = () => {
       description:
         "Created an LMS application using microservices architecture for internal training at Torry Harris. Personally handled component and page development for the Admin Dashboard, including seamless API integration.",
       image:
-        "https://cdn.pixabay.com/photo/2020/07/03/14/52/lms-5362270_1280.jpg",
+        "./this.png",
       tags: [
         "LMS",
         "Microservices",
@@ -33,14 +33,13 @@ const Projects = () => {
         "API Integration",
         "React",
       ],
-      demo: "#",
+      demo: "https://www.torryharris.com/industries/banking-and-financial-services",
     },
     {
       title: "E-commerce Web App",
       description:
         "Successfully developed and deployed a dynamic and responsive e-commerce website using the latest version of React and Strapi. Implemented features such as Hooks, Context API, and custom APIs for enhanced functionality.",
-      image:
-        "https://www.bigcommerce.com/blog/wp-content/uploads/2021/09/bigcommerce-headless-1.png",
+      image: "/website.jpeg",
       tags: [
         "React",
         "Strapi",
@@ -57,7 +56,9 @@ const Projects = () => {
   return (
     <section id="projects" className="py-5">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl font-bold mb-12 text-center slide-in">
+        <h2
+          className="text-3xl font-bold mb-12 text-center slide-in underline"
+        >
           Featured Projects
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 slide-in slide-in-delay-1">
@@ -70,7 +71,7 @@ const Projects = () => {
                 <img
                   src={project.image}
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                  className="w-full h-60 object-contain bg-black p-2 transition-transform duration-300 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center space-x-4">
                   <a
