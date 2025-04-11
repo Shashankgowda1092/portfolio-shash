@@ -2,7 +2,7 @@ import { Github, Linkedin, Mail, Twitter, Instagram } from "lucide-react";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col-reverse md:flex-row">
+    <div className="flex flex-col md:flex-row">
       <section id="home" className="pt-4 pb-6 min-h-screen flex items-center">
         <div className="container mx-auto px-10">
           <div className="grid md:grid-cols-2 gap-8 items-center">
