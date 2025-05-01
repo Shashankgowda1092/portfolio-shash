@@ -67,7 +67,7 @@ const Hero = () => {
                 </div>
               </div>
             </div>
-            <div className="relative slide-in slide-in-delay-4 order-first md:order-none mt-8 sm:mt-12">
+            <div className="relative slide-in slide-in-delay-4 order-first md:order-none mt-12 sm:mt-16">
               <div className="w-48 h-48 sm:w-56 sm:h-56 md:w-64 md:h-64 lg:w-72 lg:h-72 relative mx-auto">
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 blur-2xl opacity-80 animate-pulse"></div>
                 <img
