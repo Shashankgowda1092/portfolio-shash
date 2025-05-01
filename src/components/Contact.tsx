@@ -12,14 +12,14 @@ const Contact = () => {
         </p>
       </div>
   
-      <div className="grid gap-8 slide-in slide-in-delay-2">
+      <div className="flex flex-col gap-8 slide-in slide-in-delay-2">
         <a 
           href="mailto:shashankh1092@gmail.com"
-          className="group flex items-center justify-between p-6 bg-[#222222] rounded-lg hover:bg-[#2a2a2a] transition-all duration-300"
+          className="group flex flex-wrap items-center justify-between p-6 bg-[#222222] rounded-lg hover:bg-[#2a2a2a] transition-all duration-300 gap-2 sm:gap-4"
         >
           <div className="flex items-center gap-4">
             <Mail className="text-purple-500" size={24} />
-            <span className="text-xl">shashankh1092@gmail.com</span>
+            <span className="text-xl break-all sm:break-normal">shashankh1092@gmail.com</span>
           </div>
           <span className="text-gray-400 group-hover:translate-x-2 transition-transform duration-300">
             Send an email →
@@ -30,11 +30,11 @@ const Contact = () => {
           href="https://www.linkedin.com/in/shash-/"
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex items-center justify-between p-6 bg-[#222222] rounded-lg hover:bg-[#2a2a2a] transition-all duration-300"
+          className="group flex flex-wrap items-center justify-between p-6 bg-[#222222] rounded-lg hover:bg-[#2a2a2a] transition-all duration-300 gap-2 sm:gap-4"
         >
           <div className="flex items-center gap-4">
             <Linkedin className="text-purple-500" size={24} />
-            <span className="text-xl">LinkedIn</span>
+            <span className="text-xl break-all sm:break-normal">LinkedIn</span>
           </div>
           <span className="text-gray-400 group-hover:translate-x-2 transition-transform duration-300">
             Connect with me →
@@ -45,11 +45,11 @@ const Contact = () => {
           href="https://github.com/Shashankgowda1092"
           target="_blank"
           rel="noopener noreferrer"
-          className="group flex items-center justify-between p-6 bg-[#222222] rounded-lg hover:bg-[#2a2a2a] transition-all duration-300"
+          className="group flex flex-wrap items-center justify-between p-6 bg-[#222222] rounded-lg hover:bg-[#2a2a2a] transition-all duration-300 gap-2 sm:gap-4"
         >
           <div className="flex items-center gap-4">
             <Github className="text-purple-500" size={24} />
-            <span className="text-xl">GitHub</span>
+            <span className="text-xl break-all sm:break-normal">GitHub</span>
           </div>
           <span className="text-gray-400 group-hover:translate-x-2 transition-transform duration-300">
             See my work →
