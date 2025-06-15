@@ -50,7 +50,7 @@ const Resume = () => {
       "HTML",
       "C",
     ],
-    "Frontend Frameworks": ["ReactJS", "Angular", "Vue", "NextJS"],
+    "Frontend Frameworks": ["ReactJS","NextJS"],
     "Component Libraries": ["ShadCN", "Material UI", "Ant Design"],
     "CSS Frameworks": ["Tailwind CSS","SCSS" ,"Bootstrap"],
     "Frontend Concepts": ["Hooks", "ContextAPI", "Redux"],
